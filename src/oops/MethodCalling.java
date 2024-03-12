@@ -2,10 +2,22 @@ package oops;
 
 public class MethodCalling {
     public static void main(String[] args) {
-        //ranveer and reshmika is 2 methed that are calling using the creating the object without object we are not able to call the methosd
+        System.out.println("Main");
+        m1();
+        System.out.println("by main");
+        Secand object=new Secand();
+        object.m2();
+    } static int m1(){
+        int a=20;
+        System.out.println(a);
 
-     Animal animal=new Animal();
-     animal.ranveer();
-     animal.rashmika();
+    return a;
     }
+}
+ class Secand {
+     public static  void m2(){
+         System.out.println("Secand methed");
+
+     }
+
 }
